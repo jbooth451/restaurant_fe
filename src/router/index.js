@@ -1,25 +1,52 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
+import { createRouter, createWebHistory } from 'vue-router'
+ import Home from '../views/Home.vue'
+ //import MovieList from '../components/MovieList'
+ //import MovieCreate from '../components/MovieCreate'
+ import Auth from '../components/Auth'
+ import Register from '../components/Register'
+ 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
-
+   {
+     path: '/',
+     name: 'Home',
+     component: Home
+   },
+ /*  {
+     path: '/movie-list',
+     name: 'MovieList',
+     component: MovieList,
+   },
+   {
+     path:'/movie-list/:msg',
+     name: 'MovieUpdatedList',
+     component: MovieList
+   },
+   {
+     path:'/movie-create',
+     name:'MovieCreate',
+     component: MovieCreate
+   },
+   {
+     path: '/movie-create/:pk',
+     name: 'MovieUpdate',
+     component: MovieCreate
+   }, */
+   {
+     path:'/auth',
+     name:'Auth',
+     component: Auth
+   },
+   {
+     path:'/register',
+     name: 'Register',
+     component: Register
+   }
+ ]
+ 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
-
+   history: createWebHistory(process.env.BASE_URL),
+   routes
+ })
+ 
 export default router
+
