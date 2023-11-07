@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
  import Home from '../views/Home.vue'
- //import MovieList from '../components/MovieList'
- //import MovieCreate from '../components/MovieCreate'
+ import Menu from '../components/Menu.vue'
+ import Reservation from '../components/Reservation.vue'
  import Auth from '../components/Auth'
  import Register from '../components/Register'
  
@@ -21,17 +21,16 @@ const routes = [
      name: 'MenuUpdated',
      component: Menu
    },
-   /*
    {
-     path:'/movie-create',
-     name:'MovieCreate',
-     component: MovieCreate
+     path:'/reservations',
+     name:'Reservation',
+     component: Reservation
    },
    {
-     path: '/movie-create/:pk',
-     name: 'MovieUpdate',
-     component: MovieCreate
-   }, */
+     path: '/reservations/:pk',
+     name: 'Reservation',
+     component: Reservation
+   },
    {
      path:'/auth',
      name:'Auth',

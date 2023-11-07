@@ -29,7 +29,7 @@ export class APIService {
   }
 
   getReservation(param_pk){
-    const url = `${API_URL}/api/reservartion/${param_pk}`;
+    const url = `${API_URL}/api/reservation/${param_pk}`;
     let jwtToken = localStorage.getItem('access');
     const headers = {Authorization: `JWT ${jwtToken}`};
     return axios.put(url, movie, {headers: headers});

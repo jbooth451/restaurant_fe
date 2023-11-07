@@ -1,7 +1,7 @@
 <template>
     <div class="home">
-      <h1>Welcome to Our Restaurant</h1>
-      <p>Discover the most interesting dining experience in town.</p>
+      <h1>This is the orders page.</h1>
+      <p>Discover the finest dining experience in town.</p>
     </div>
   </template>
   
@@ -22,7 +22,7 @@
   h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color:blueviolet
+    color:aquamarine
   }
   
   p {
