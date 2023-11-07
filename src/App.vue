@@ -8,7 +8,7 @@
               <ul class="nav-items">
                   <li> <router-link to="/">Home</router-link></li>
                   <li v-if="this.authenticated">
-                      <router-link :to="{name: 'MovieList'}">Movies</router-link>
+                      <router-link :to="{name: 'Menu'}">Menu</router-link>
                   </li>
                   <li v-else @click="login">
                       <router-link :to="{name: 'Auth'}">Log in</router-link>
@@ -31,7 +31,7 @@
           </li>
           <li class="nav-item" v-if="this.authenticated">
               |
-              <router-link :to="{name: 'MovieList'}">Movies</router-link>
+              <router-link :to="{name: 'Menu'}">Menu</router-link>
           </li>
           <li class="nav-item" v-if="!this.authenticated" @click="login">
               |
@@ -125,11 +125,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
 }
 .nav {
   padding: 1em;
-  background-color: cadetblue;
+  background-color: rgb(0, 0, 0);
 }
  li {
     font-weight: bold;
@@ -140,7 +140,7 @@
     padding: .5em;
 
    &.router-link-exact-active {
-      color: #08492c;
+      color: #83958d;
     }
   }
 // Mobile version - hamburger menu

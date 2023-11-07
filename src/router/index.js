@@ -11,16 +11,17 @@ const routes = [
      name: 'Home',
      component: Home
    },
- /*  {
-     path: '/movie-list',
-     name: 'MovieList',
-     component: MovieList,
+   {
+     path: '/menu',
+     name: 'Menu',
+     component: Menu,
    },
    {
-     path:'/movie-list/:msg',
-     name: 'MovieUpdatedList',
-     component: MovieList
+     path:'/menu/:msg',
+     name: 'MenuUpdated',
+     component: Menu
    },
+   /*
    {
      path:'/movie-create',
      name:'MovieCreate',
