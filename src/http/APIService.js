@@ -7,39 +7,32 @@ export class APIService {
   constructor() {
   }
 
-  getMovie(param_pk) {
-    const url = `${API_URL}/api/movies/${param_pk}`;
+  getMenu(param_pk) {
+    const url = `${API_URL}/api/menu/${param_pk}`;
     let jwtToken = localStorage.getItem('access');
     const headers = {Authorization: `JWT ${jwtToken}`};
     return axios.get(url, {headers: headers});
   }
   
-  getMovieList() {
-    const url = `${API_URL}/api/movies/`;
+  getTable(param_pk) {
+    const url = `${API_URL}/api/table/${param_pk}`;
     let jwtToken = localStorage.getItem('access');
     const headers = {Authorization: `JWT ${jwtToken}`};
     return axios.get(url, {headers: headers});
   }
 
-  addNewMovie(movie){
-    const url = `${API_URL}/api/movies/`;
+  getOrder(param_pk){
+    const url = `${API_URL}/api/orders/${param_pk}`;
     let jwtToken = localStorage.getItem('access');
     const headers = {Authorization: `JWT ${jwtToken}`};
     return axios.post(url, movie, {headers: headers});
   }
 
-  updateMovie(movie){
-    const url = `${API_URL}/api/movies/${movie.pk}`;
+  getReservation(param_pk){
+    const url = `${API_URL}/api/reservartion/${param_pk}`;
     let jwtToken = localStorage.getItem('access');
     const headers = {Authorization: `JWT ${jwtToken}`};
     return axios.put(url, movie, {headers: headers});
-  }
-
-  deleteMovie(movie_Pk){
-    const url = `${API_URL}/api/movies/${movie_Pk}`;
-    let jwtToken = localStorage.getItem('access');
-    const headers = {Authorization: `JWT ${jwtToken}`};
-    return axios.delete(url, {headers: headers});
   }
 
   authenticateLogin(credentials) {
