@@ -31,24 +31,24 @@
                 <img :src="require('@/assets/LogoMMM1.jpg')" class="img-fluid" alt="Logo">
             </div>
         </a>
-          <li class="nav-item active">
-              <router-link to="/">Home</router-link>
+          <li class="nav-item active" >
+              <router-link to="/" style="text-decoration:none">HOME</router-link>
           </li>
           <li class="nav-item" v-if="this.authenticated">
               |
-              <router-link :to="{name: 'Menu'}">Menu</router-link>
+              <router-link :to="{name: 'Menu'}" style="text-decoration:none">MENU</router-link>
           </li>
           <li class="nav-item" v-if="!this.authenticated" @click="login">
               |
-              <router-link :to="{name: 'Auth'}">Log in</router-link>
+              <router-link :to="{name: 'Auth'}" style="text-decoration:none">LOGIN</router-link>
           </li>
           <li class="nav-item" v-if="!this.authenticated" @click="register">
               |
-              <router-link :to="{name: 'Register'}">Register</router-link>
+              <router-link :to="{name: 'Register'}" style="text-decoration:none">REGISTER</router-link>
           </li>
           <li class="nav-item  .justify-content-end" v-if="this.authenticated" @click="logout">
               |
-              <router-link :to="{name: 'Auth'}">Logout</router-link>
+              <router-link :to="{name: 'Auth'}" style="text-decoration:none">LOGOUT</router-link>
           </li>
       </ul>
   </div>
@@ -138,7 +138,8 @@
 }
  li {
     font-weight: bold;
-    color: #2c3e50;
+    color: #000000;
+    font-family:'Franklin Gothic Medium';
   }
   a {
     color: black;
