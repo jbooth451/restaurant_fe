@@ -26,7 +26,7 @@
   }
   
   p {
-    font-size: 1.2rem;
+    font-size: 12px;
     color: #888;
   }
   </style>

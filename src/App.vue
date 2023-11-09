@@ -25,7 +25,12 @@
   </div>
   <!--Non mobile navigation-->
   <div class="d-none d-xl-block d-lg-block d-md-block">
-      <ul class="nav justify-content-center">
+      <ul class="nav justify-content-end">
+        <a class="navbar-brand" href="/">
+            <div class="logo-image">
+                <img :src="require('@/assets/LogoMMM1.jpg')" class="img-fluid" alt="Logo">
+            </div>
+        </a>
           <li class="nav-item active">
               <router-link to="/">Home</router-link>
           </li>
@@ -177,6 +182,13 @@ height: 60%;
 opacity: 0;
 height: 20;
 padding: 0;
+}
+.logo-image img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
 }
 }
 </style>
