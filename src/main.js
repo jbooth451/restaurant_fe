@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 // import the fontawesome icons
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faTrash, faPencil, faPlus, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faPencil, faPlus, faBars, faPizzaSlice } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(faTrash, faPencil, faPlus, faBars);

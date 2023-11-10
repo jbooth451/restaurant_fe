@@ -5,9 +5,15 @@
     <p style = "position:relative; left:40px; top:-100px;">Mini-Me Meals has been bringing you the best since 1973, and we're not stopping now.
     <br>With new additions to our menu every year, there's always something new to look forward to.
     <br>It's a place where parents and children alike can unwind and enjoy a great meal.</p>
-  </div>
-  <div class="menu-burger">
+    <div class="menu-burger">
       <img :src="require('@/assets/menu-burger.png')" alt="Menu Burger" id="menu-burger">
+    </div>
+    <div class="menu-buttons">
+      <button type="button">What's Hot</button>
+      <button type="button">Burgers</button>
+      <button type="button"><i class=fas fa-pizza-slice></i>Pizza</button>
+      <button type="button">Sandwiches</button>
+    </div>
   </div>
   <body>
   </body>
@@ -19,8 +25,10 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Menu',
+  
 };
+
 </script>
 
 <style scoped>
@@ -76,9 +84,26 @@ footer {
 } 
 .menu-burger {
     margin-left: auto;
-    margin-top: -550px;
+    margin-top: -529px;
     width: 40%;
     height: 40%;
     display: block;
+}
+.menu-buttons {
+  border: none;
+  color: rgb(172, 161, 161);
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  font-family: 'Franklin Gothic Medium';
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.menu-buttons:hover {
+  color: rgb(224, 14, 14);
+  border: 0.5px solid rgb(255, 10, 10);
+
 }
 </style>
