@@ -191,7 +191,6 @@ padding: 0;
 }
 //Adjusts the logo on the navbar
 .logo-image {
-    //Adjusts the image to the left, need to change though.
     width: 190px;
     height: 40px;
     border-radius: 50%;
