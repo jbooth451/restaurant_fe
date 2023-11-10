@@ -22,13 +22,8 @@ const routes = [
      component: Menu
    },
    {
-     path:'/reservations',
+     path:'/reservations/:pk?',
      name:'Reservation',
-     component: Reservation
-   },
-   {
-     path: '/reservations/:pk',
-     name: 'Reservation',
      component: Reservation
    },
    {

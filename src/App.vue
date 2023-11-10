@@ -38,6 +38,10 @@
               |
               <router-link :to="{name: 'Menu'}" style="text-decoration:none">MENU</router-link>
           </li>
+          <li class="nav-item">
+            |
+            <router-link :to="{name: 'Reservation'}" style="text-decoration:none">RESERVATIONS</router-link>
+        </li>
           <li class="nav-item" v-if="!this.authenticated" @click="login">
               |
               <router-link :to="{name: 'Auth'}" style="text-decoration:none">LOGIN</router-link>
@@ -187,7 +191,7 @@ padding: 0;
 }
 //Adjusts the logo on the navbar
 .logo-image {
-    margin-right: 1440px; /* Adjust the margin as needed */
+    //Adjusts the image to the left, need to change though.
     width: 190px;
     height: 40px;
     border-radius: 50%;
