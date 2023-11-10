@@ -131,6 +131,9 @@
 <style lang="scss">
  #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  //Changes the size of the font in the navbar. 
+  font-size: 20px;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -1,7 +1,7 @@
 <template>
     <div class="home">
       <h1>THE BEST JUST<br>GOT BETTER.</h1>
-      <p>Try out our New Double Triple Butter Burger Supreme,<br> Ttopped with Crispy Onions.</p>
+      <p>Try out our New Double Triple Butter Burger Supreme,<br> Topped with Crispy Onions.</p>
     </div>
     <body>
       <!-- Background GIF -->
