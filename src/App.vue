@@ -184,12 +184,14 @@ opacity: 0;
 height: 20;
 padding: 0;
 }
-.logo-image img{
-    width: 20px;
-    height: 20px;
+}
+//Adjusts the logo on the navbar
+.logo-image {
+    margin-right: 1440px; /* Adjust the margin as needed */
+    width: 190px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
     margin-top: -6px;
-}
 }
 </style>
