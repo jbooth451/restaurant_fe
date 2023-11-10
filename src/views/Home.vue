@@ -7,6 +7,10 @@
       <!-- Background GIF -->
       <img :src="require('@/assets/burger-gif.gif')" alt="Background GIF" id="background">
     </body>
+    <footer>
+      <h4>Phone: (000)-000-0000</h4>
+      <h4>Email: MiniMeMeals@gmail.com</h4>
+    </footer>
   </template>
   
   <script>
@@ -53,12 +57,23 @@
     font-size: 4rem;
     padding: 80px;
     margin-bottom: 10px;
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke: 2px #000;
+  }
+  h4 {
+    font-size: 15px;
   }
   
   p {
-    font-size: 30px;
+    font-size: 35px;
     padding: 20px;
     color: #ffffff;
+    -webkit-text-stroke: 1.5px #000;
   }
+  footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: left;
+  } 
   </style>

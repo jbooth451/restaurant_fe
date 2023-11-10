@@ -41,7 +41,7 @@
           <li class="nav-item">
             |
             <router-link :to="{name: 'Reservation'}" style="text-decoration:none">RESERVATIONS</router-link>
-        </li>
+          </li>
           <li class="nav-item" v-if="!this.authenticated" @click="login">
               |
               <router-link :to="{name: 'Auth'}" style="text-decoration:none">LOGIN</router-link>
