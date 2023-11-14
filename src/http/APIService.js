@@ -7,8 +7,8 @@ export class APIService {
   constructor() {
   }
 
-  getMenu(param_pk) {
-    const url = `${API_URL}/api/menu/${param_pk}`;
+  getMenu() {
+    const url = `${API_URL}/api/menu/`;
     let jwtToken = localStorage.getItem('access');
     const headers = {Authorization: `JWT ${jwtToken}`};
     return axios.get(url, {headers: headers});
