@@ -1,14 +1,14 @@
 <template>
     <div class="home">
-      <h1>THE BEST JUST<br>GOT BETTER.</h1>
-      <p>Try out our New Double Triple Butter Burger Supreme,<br> Topped with Crispy Onions.</p>
+      <h1 style="position:relative; left:40px; top:200px;">THE BEST JUST<br>GOT BETTER.</h1>
+      <p style="position:relative; left:40px; top:200px;">Try out our New Double Triple Butter Burger Supreme,<br> Topped with Crispy Onions.</p>
     </div>
     <body>
       <!-- Background GIF -->
       <img :src="require('@/assets/burger-gif.gif')" alt="Background GIF" id="background">
     </body>
-    <footer>
-      <h4>Phone: (000)-000-0000</h4>
+    <footer style="">
+      <h4>Contact Us - Phone: (000)-000-0000</h4>
       <h4>Email: MiniMeMeals@gmail.com</h4>
     </footer>
   </template>
@@ -44,36 +44,40 @@
             color: white;
             font-size: 24px;
             text-align: center;
-            /* Add more styling as needed */
         }
   /* Add your CSS styles for the Home component here */
   .home {
     text-align: left;
-    padding: 20px;
+    padding: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   h1 {
-    font-size: 4rem;
-    padding: 80px;
-    margin-bottom: 10px;
-    color:rgb(255, 255, 255);
-    -webkit-text-stroke: 2px #000;
+    font-family: tenso,Arial,sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 65px;
+    padding-bottom: 0.425em;
   }
   h4 {
     font-size: 15px;
   }
   
   p {
-    font-size: 35px;
-    padding: 20px;
+    font-family: roboto,Helvetica,sans-serif;
     color: #ffffff;
-    -webkit-text-stroke: 1.5px #000;
+    font-size: 25px;
+    line-height: 1.5;
   }
   footer {
-    background-color: black;
-    color: white;
-    padding: 5px;
-    text-align: left;
-  } 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Set your desired background color */
+    color: white; /* Set your desired text color */
+    padding: -5px;
+    text-align: center;
+  }
   </style>
