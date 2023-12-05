@@ -13,12 +13,14 @@
     </div>
 
     <div class="content">
-      <h1>NEBRASKA'S BEST<br>COMFORT FOOD.</h1>
-      <h2>Keeping everything you like, while bringing something new.</h2>
-      <p>Mini-Me Meals has been bringing you the best since 1973, and we're not stopping now.
-        <br>With new additions to our menu every year, there's always something new to look forward to.
-        <br>It's a place where parents and children alike can unwind and enjoy a great meal.</p>
-      
+      <div class="text-content">
+        <h1>NEBRASKA'S BEST<br>COMFORT FOOD.</h1>
+        <h2>Keeping everything you like, while bringing something new.</h2>
+        <p>Mini-Me Meals has been bringing you the best since 1973, and we're not stopping now.
+          <br>With new additions to our menu every year, there's always something new to look forward to.
+          <br>It's a place where parents and children alike can unwind and enjoy a great meal.</p>
+      </div>
+
       <div class="menu-burger">
         <img :src="require('@/assets/menu-burger.png')" alt="Menu Burger" id="menu-burger">
       </div>
@@ -59,6 +61,9 @@ body {
 .content {
   display: flex;
   align-items: flex-start;
+}
+.text-content {
+  max-width: 800px; /* Set a maximum width for the text content */
 }
 .menu-buttons {
   display: flex;

@@ -1,9 +1,9 @@
 <template>
   <div class="menu">
-      <h1>APPETIZERS</h1>
-      <h2 style="position:relative; left:40px; top:-80px;"><i>Something to start, something to share.</i></h2>
-      <p style="position:relative; left:60px; top:-100px;"> Some of the best appetizers around. Great bite-sized fun that both parents and children can enjoy!
-        <br> Don't forget to check out our Signature Fried Pickles!</p>
+      <h1>SANDWICHES & BURGERS</h1>
+      <h2 style="position:relative; left:40px; top:-80px;"><i>The stars of the show.</i></h2>
+      <p style="position:relative; left:60px; top:-100px;"> Some of the best Burgers and Sandwiches in town.
+        <br> Check out our Signature Burgers!</p>
   </div>  
   <div class="row align-items-center justify-content-center">
               <div class="col col-12 col-md-10 d-none d-xl-block d-lg-block d-md-block">
