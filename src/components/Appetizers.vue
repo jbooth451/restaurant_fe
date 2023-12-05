@@ -18,12 +18,14 @@
                     </thead>
                     <tbody>
                     {{ console.log('Menu:', Array.isArray(Menu) ? Menu : 'Not an array') }}
-                    <tr v-for="food in Menu" :key="food.MenuID">
-                        <th scope="row">{{ food.foodName }}</th>
-                        <td><img :src="food.foodPic" alt="Food Picture"></td>
-                        <td>{{ food.foodPrice }}</td>
-                        <td>{{ food.foodCategory }}</td>
-                    </tr>
+                    <template v-for="food in Menu" :key="food.MenuID">
+                        <tr v-if="food && food.foodCategory === 'Appetizers'">
+                            <th scope="row">{{ food.foodName }}</th>
+                            <td><img :src="food.foodPic" alt="Food Picture"></td>
+                            <td>{{ food.foodPrice }}</td>
+                            <td>{{ food.foodCategory }}</td>
+                        </tr>
+                     </template>
                     {{ console.log('Menu:', Menu) }}
                     </tbody>
                 </table>
