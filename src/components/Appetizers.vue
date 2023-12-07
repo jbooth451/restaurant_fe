@@ -1,5 +1,16 @@
 <template>
 <div class="menu">
+    <div class="navbar">
+      <div class="menu-buttons">
+        <router-link to="/appetizers">Appetizers</router-link>
+        <router-link to="/soups_salads">Soups and Salads</router-link>
+        <router-link to="/sandwiches_burgers">Sandwiches & Burgers</router-link>
+        <router-link to="/main_entrees">Main Entrees</router-link>
+        <router-link to="/desserts">Desserts</router-link>
+        <router-link to="/sides">Sides</router-link>
+        <router-link to="/drinks">Drinks</router-link>
+      </div>
+    </div>
     <h1>APPETIZERS</h1>
     <h2 style="position:relative; left:40px; top:-80px;"><i>Something to start, something to share.</i></h2>
     <p style="position:relative; left:60px; top:-100px;"> Some of the best appetizers around. Great bite-sized fun that both parents and children can enjoy!
@@ -108,7 +119,33 @@
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.navbar {
+  background-color: #fff; /* Set background color for the navbar */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-buttons {
+  display: flex;
+}
+.menu-buttons a {
+  border: none;
+  color: rgb(172, 161, 161);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium';
+  margin: 0 10px;
+  cursor: pointer;
+}
 
+.menu-buttons a:hover {
+  color: rgb(224, 14, 14);
+  border-bottom: 2px solid rgb(224, 14, 14);
+}
 h1 {
   font-size: 4rem;
   padding: 60px;
