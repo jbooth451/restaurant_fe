@@ -17,6 +17,8 @@
       <br> Don't forget to check out our Signature Fried Pickles!</p>
 </div>  
 <div class="row align-items-center justify-content-center">
+  <router-link to="/add-edit-food">Add Food</router-link>
+
             <div class="col col-12 col-md-10 d-none d-xl-block d-lg-block d-md-block">
                 <table class="table table-hover" style="overflow-y: auto" :headers="headers">
                     <thead>
@@ -32,9 +34,13 @@
                     <template v-for="food in Menu" :key="food.MenuID">
                         <tr v-if="food && food.foodCategory === 'Appetizers'">
                             <th scope="row">{{ food.foodName }}</th>
-                            <td><img :src="food.foodPic" alt="Food Picture"></td>
+                            <td><img :src="food.foodPic" alt="Food Picture" class="food-image"></td>
                             <td>{{ food.foodPrice }}</td>
                             <td>{{ food.foodCategory }}</td>
+                            <td>
+                              <button @click="editFood(food)">Edit</button>
+                              <button @click="deleteFood(food.MenuID)">Delete</button>
+                            </td>
                         </tr>
                      </template>
                     {{ console.log('Menu:', Menu) }}
@@ -47,11 +53,15 @@
 
 <script>
   import {APIService} from "@/http/APIService";
+  import AddEditFood from '@/components/AddEditFood.vue';
 
   const apiService = new APIService();
   import router from "../router";
 
   export default {
+    components: {
+    AddEditFood,
+  },
     data() {
             return {
                 Menu: [],
@@ -71,6 +81,14 @@
             this.getMenu();
         },
         methods: {
+          editFood(food) {
+          // Navigate to the AddEditFood component with the food details
+          this.$router.push({ name: 'add-edit-food', params: { food } });
+    },
+          deleteFood(menuId) {
+          // Call your API service to delete the food item
+          // Then, update the menu data
+    },
             onResize() {
                 if (window.innerWidth > 600)
                     this.isMobile = true;
@@ -118,6 +136,10 @@
   text-align: left;
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.food-image {
+  max-width: 300px; /* Set a maximum width for the images */
+  height: auto; /* Maintain the aspect ratio */
 }
 .navbar {
   background-color: #fff; /* Set background color for the navbar */

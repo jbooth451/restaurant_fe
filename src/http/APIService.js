@@ -45,4 +45,11 @@ export class APIService {
      credentials.customusername = credentials.username
      return axios.post(url, credentials);
   }
+  
+  saveFood(param_pk) {
+    const url = `${API_URL}/api/menu/`;
+    let jwtToken = localStorage.getItem('access');
+    const headers = {Authorization: `JWT ${jwtToken}`};
+    return axios.get(url, {headers: headers});
+ }
 }

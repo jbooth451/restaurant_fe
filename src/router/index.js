@@ -11,7 +11,8 @@ import { createRouter, createWebHistory } from 'vue-router'
  import Reservation from '../components/Reservation.vue'
  import Auth from '../components/Auth'
  import Register from '../components/Register'
- 
+ import AddEditFood from '@/components/AddEditFood.vue';
+
 const routes = [
    {
      path: '/',
@@ -26,8 +27,13 @@ const routes = [
    {
      path:'/menu/:msg',
      name: 'MenuUpdated',
-     component: Menu
+     component: Menu,
    },
+   {
+    path: '/add-edit-food',
+    name: 'add-edit-food',
+    component: AddEditFood,
+  },
    { 
      path: '/appetizers',
      name: 'Appetizers',

@@ -32,7 +32,7 @@
                       <template v-for="food in Menu" :key="food.MenuID">
                           <tr v-if="food && food.foodCategory === 'Desserts'">
                               <th scope="row">{{ food.foodName }}</th>
-                              <td><img :src="food.foodPic" alt="Food Picture"></td>
+                              <td><img :src="food.foodPic" alt="Food Picture" class="food-image"></td>
                               <td>{{ food.foodPrice }}</td>
                               <td>{{ food.foodCategory }}</td>
                           </tr>
@@ -119,6 +119,10 @@
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+  .food-image {
+  max-width: 300px; /* Set a maximum width for the images */
+  height: auto; /* Maintain the aspect ratio */
+}
   .navbar {
   background-color: #fff; /* Set background color for the navbar */
   padding: 10px 20px;
